@@ -1,15 +1,12 @@
 import React from 'react';
-import CountryField from './components/countryField'
-import { withNamespaces } from 'react-i18next';
+import Home from '../src/components/pages/homePage'
 
-function App (props) {
+function App () {
   return (
-    <div>
-      <h1>{props.t('Welcome to React')}</h1>
-      <CountryField language="NL" />
-      <CountryField language="ENG" />
-    </div>
+    <>
+      <Home />
+    </>
   )
 }
 
-export default withNamespaces()(App);
+export default App;
