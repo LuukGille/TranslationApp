@@ -1,0 +1,20 @@
+.btn {
+    height: 200px;
+    width: 200px;
+    &Icon {
+        background-color: transparent; /* Green */
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    &NL {
+        background-image: url('../../images/circle-netherlands.png');
+        background-size: contain;
+    }
+
+    &ENG {
+        background-image: url('../../images/circle-english.png');
+        background-size: contain;
+    }
+}

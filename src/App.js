@@ -1,17 +1,13 @@
 import React from 'react';
-import i18n from './i18n';
+import CountryField from './components/countryField'
 import { withNamespaces } from 'react-i18next';
 
-function App ({ t }) {
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  }
-
+function App (props) {
   return (
     <div>
-      <button onClick={() => changeLanguage('nl')}>NL</button>
-      <button onClick={() => changeLanguage('en')}>ENG</button>
-      <h1>{t('Welcome to React')}</h1>
+      <h1>{props.t('Welcome to React')}</h1>
+      <CountryField language="NL" />
+      <CountryField language="ENG" />
     </div>
   )
 }
