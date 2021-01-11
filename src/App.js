@@ -1,10 +1,18 @@
 import React from 'react';
-import Home from '../src/components/pages/homePage'
+import Home from '../src/components/pages/homePage';
+import {
+  Switch,
+  Route
+} from 'react-router-dom';
 
 function App () {
   return (
     <>
-      <Home />
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
     </>
   )
 }
