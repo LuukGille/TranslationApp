@@ -1,13 +1,13 @@
 import i18n from "i18next";
 import detector from "i18next-browser-languagedetector";
 import { reactI18nextModule } from "react-i18next";
-import translationEN from './locales/en/transation.json';
-import translationNL from './locales/nl/translation.json';
+import translationENG from './locales/ENG/transation.json';
+import translationNL from './locales/NL/translation.json';
 
 // the translations
 const resources = {
   ENG: {
-    translation: translationEN
+    translation: translationENG
   },
   NL: {
     translation: translationNL
