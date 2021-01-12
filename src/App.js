@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from '../src/components/pages/homePage';
+import Home from './pages/homePage/index';
 import {
   Switch,
   Route
